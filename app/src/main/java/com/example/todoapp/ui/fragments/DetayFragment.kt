@@ -10,7 +10,9 @@ import androidx.navigation.fragment.navArgs
 import com.example.todoapp.R
 import com.example.todoapp.databinding.FragmentDetayBinding
 import com.example.todoapp.ui.viewmodel.DetayViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class DetayFragment : Fragment() {
     private lateinit var binding: FragmentDetayBinding
     private lateinit var viewModel: DetayViewModel

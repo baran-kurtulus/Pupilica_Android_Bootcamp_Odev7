@@ -14,6 +14,8 @@ import com.google.android.material.snackbar.Snackbar
 
 class TodoAdapter(var context: Context, var todoListesi: List<Todo>, var viewModel: AnasayfaViewModel)
     : RecyclerView.Adapter<TodoAdapter.CardTasarimTutucu>() {
+
+    inner class CardTasarimTutucu(var tasarim: CardTasarimBinding) : RecyclerView.ViewHolder(tasarim.root)
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -48,5 +50,5 @@ class TodoAdapter(var context: Context, var todoListesi: List<Todo>, var viewMod
         return todoListesi.size
     }
 
-    inner class CardTasarimTutucu(var tasarim: CardTasarimBinding) : RecyclerView.ViewHolder(tasarim.root)
+
 }

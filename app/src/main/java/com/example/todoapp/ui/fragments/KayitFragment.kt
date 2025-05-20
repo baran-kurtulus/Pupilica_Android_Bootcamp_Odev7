@@ -9,7 +9,9 @@ import androidx.fragment.app.viewModels
 import com.example.todoapp.R
 import com.example.todoapp.databinding.FragmentKayitBinding
 import com.example.todoapp.ui.viewmodel.KayitViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class KayitFragment : Fragment() {
     private lateinit var binding: FragmentKayitBinding
     private lateinit var viewModel: KayitViewModel

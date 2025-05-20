@@ -15,8 +15,9 @@ import com.example.todoapp.databinding.FragmentAnasayfaBinding
 import com.example.todoapp.ui.adapter.TodoAdapter
 import com.example.todoapp.ui.viewmodel.AnasayfaViewModel
 import com.example.todoapp.utils.gecisYap
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class AnasayfaFragment : Fragment() {
     private lateinit var binding: FragmentAnasayfaBinding
     private lateinit var viewModel: AnasayfaViewModel
